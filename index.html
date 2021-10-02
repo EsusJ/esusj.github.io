@@ -1,13 +1,92 @@
+<!DOCTYPE html>
 <html>
-<title>欢迎来访EsusJ的小站！</title>
+
+<!-- 
+咳咳……你好，我是EsusJ。这是一个东拼西凑的网站，几乎是照搬nana7mi.com……
+在此向dalao谢罪……
+主要是因为我的html经历就只是在萌娘百科写过几个词条，css也不太熟悉，加之高三时间不多，
+这个小网站只能靠国庆两天假的一个晚上赶制，属实不易。
+以后会逐渐添加自己的东西。下一步是准备做一个可展开的圣嘉然语录的预览，并且替换然然头像所使用的js。
+-->
+
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jiaran Home">
+    <meta name="keywords" content="嘉然,Jiaran,嘉然Diana,Diana,A-soul">
+    <title>嘉心糖的小站</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/onlinewebfonts.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/vno.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="icon" href="./favicon.ico">
+</head>
+
 <body>
-<p>当前页面正在施工！高三时间有限，敬请期待！</p>
-欢迎关注B站<a href="https://space.bilibili.com/672328094">嘉然今天吃什么</a>
-<br />
-<p>现在的时间是</p>
-<span id="cg"></span>
-<script>
-setInterval("cg.innerHTML=new Date().toLocaleString()",1000);
-</script>
+    <header id="panel" class="panel-cover" style="background-image: url(&quot;./img/jiaranhead.jpg&quot;);background-size: cover; background-color: rgb(102, 102, 102); background-position: center center; background-repeat: no-repeat no-repeat;">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <div class="ih-item circle effect right_to_left">
+                        <div class="iUp">           
+                            <a class="blog-button">
+                                <div class="img"><img src="./img/jiaran1.jpg" alt="img" class="js-avatar profilepic"></div>
+                                <div class="info">
+                                        <div class="info-back"><img src="./img/jiaran2.jpg" alt="img" class="profilepic"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="panel-cover__title panel-title iUp">
+                        嘉心糖的小站<br>
+                    </p>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">点此前往B站<a href="https://space.bilibili.com/672328094">嘉然今天吃什么</a></p>
+                    <hr class="panel-cover__divider iUp" />
+                    <p id="description" class="panel-cover__description iUp">
+                        现在是<span id="cg"></span>
+                        <script>
+                        setInterval("cg.innerHTML=new Date().toLocaleString()",1000);
+                        </script>。
+                        <br />
+                        大家，要好好吃饭。
+                        <br />
+                        <strong>-圣嘉然</strong>
+                    </p>
+                    <div class="cover-navigation iUp">
+                        <div>
+                            <nav class="cover-navigation--primary">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://www.bilibili.com/video/BV1FX4y1g7u8" class="blog-button" target="_blank">猫中毒</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="cover-navigation iUp">
+                            <p id="description2" class="panel-cover__description">
+                               若对本站有任何意见或建议，<strong>敬请:</strong>
+                            </p>
+                            <a href="https://space.bilibili.com/38728223" class="blog-button" style="font-size: 0.9em; font-weight: bold;-webkit-font-smoothing: antialiased;">
+                                <i class='social iconfont icon-email'></i>
+                                B站私信EsusJ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+        <!-- <div class="beian iUp">
+            <a class="icp" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">XXX</a>
+            <a class="gwab" href="http://www.beian.gov.cn/portal/recordQuery" target="_blank">XXX</a>
+        </div> -->
+    </header>
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/fetch.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
+
 </html>
